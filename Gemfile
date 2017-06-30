@@ -44,6 +44,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'select2-rails'
 gem 'bootstrap-datepicker-rails'
 gem 'ckeditor'
+gem 'ranked-model'
+gem 'jquery-ui-rails'
 
 group :development, :test do
   gem 'rspec-rails'
