@@ -12,7 +12,9 @@ gem 'rails', '~> 5.0.2'
 gem 'bootstrap-sass'
 
 gem 'devise'
-
+gem 'rails-i18n'
+gem 'devise-i18n'
+gem 'nested_form_fields'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -39,6 +41,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'select2-rails'
+gem 'bootstrap-datepicker-rails'
+gem 'ckeditor'
 
 group :development, :test do
   gem 'rspec-rails'
