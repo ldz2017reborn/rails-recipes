@@ -11,6 +11,9 @@ class Event < ApplicationRecord
  has_many :tickets, :dependent => :destroy
  has_many :registrations, :dependent => :destroy
  accepts_nested_attributes_for :tickets, :allow_destroy => true, :reject_if => :all_blank
+
+ has_many :attachments, :class_name => "EventAttachment", :dependent => :destroy
+ accepts_nested_attributes_for :attachments, :allow_destroy => true, :reject_if => :all_blank
  STATUS = ["draft", "public", "private"]
  validates_inclusion_of :status, :in => STATUS
  validates_presence_of :name, :friendly_id
