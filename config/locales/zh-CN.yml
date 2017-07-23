@@ -1,4 +1,11 @@
 "zh-CN":
+  notification:
+    subject:
+      cofirmed_registration: "报名成功: %{@name}"
+  user:
+    role:
+      admin: 超级会员
+      editor: 活动管理员
   registration:
     ststus:
       pending: 报名尚未完成

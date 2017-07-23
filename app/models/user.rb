@@ -14,4 +14,14 @@ class User < ApplicationRecord
   has_many :registrations
 
   accepts_nested_attributes_for :profile
+
+  ROLES = ["admin", "editor"]
+
+  def is_admin?
+    self.role == "admin"
+  end
+
+  def is_editor?
+    ["admin", "editor"].include?(self.role) # 如果是admin 的话当然也有editor 的权限
+  end
 end
