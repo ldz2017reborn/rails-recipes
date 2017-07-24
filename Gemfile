@@ -56,6 +56,7 @@ gem 'axlsx'
 gem 'axlsx_rails'
 gem 'letter_opener'
 gem 'premailer-rails'
+gem 'sidekiq'
 
 group :development, :test do
   gem 'rspec-rails'
