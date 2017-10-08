@@ -2,9 +2,8 @@ sh "ssh-add"
 
 # config valid only for current version of Capistrano
 
-lock "3.9.0"
 
-set :application, "rails_recipes" # 请用你自己的项目名称
+set :application, "rails_recipes"   # 请用你自己的项目名称
 set :repo_url, "git@github.com:ldz2017reborn/rails-recipes.git" # 请用你自己项目的git位置
 
 # Default branch is :master

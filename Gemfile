@@ -58,13 +58,11 @@ gem 'letter_opener'
 gem 'premailer-rails'
 gem 'sidekiq'
 gem 'mysql2'
-gem 'whenever', :require => false
 
 group :development, :test do
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
-  gem 'capistrano-sidekiq'
-  gem 'rspec-rails'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end

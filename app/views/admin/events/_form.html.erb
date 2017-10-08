@@ -67,7 +67,11 @@
 
 
 <script>
-  $("#event_category_id").select2(  { theme: "bootstrap"}  );
+$(document).ready(function(){
+if ( $("#events-edit").length > 0 ) {
+  $("#event_category_id").select2( { theme: "bootstrap"} );
+}
+})
 </script>
 
  <%= f.nested_fields_for :attachments do |ff| %>
